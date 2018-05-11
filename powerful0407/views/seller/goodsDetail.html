@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/st/boot-dist/css/bootstrap.css"/>
+    <title>商城</title>
+</head>
+<body>
+
+    <h1>商品详情</h1>
+    <div>
+        <label>商品名字</label>
+        {{goodsInfo.name}}
+    </div>
+    <div>
+        <label>商品描述</label>
+        {{goodsInfo.description}}
+    </div>
+    <div>
+        <label>商品详情图</label>
+        {% for imgPath in goodsInfo.detailImg %}
+        <img src="{{imgPath}}"/>
+        {% endfor %}
+    </div>
+    <div>
+        <label>商品缩略图</label>
+        {% for imgPath in goodsInfo.thumbImg %}
+        <img src="{{imgPath}}"/>
+        {% endfor %}
+    </div>
+
+    <div>
+        <label>商品尺码</label>
+        {% for sizeItem in goodsInfo.size %}
+        <button class="btn btn-default">{{sizeItem}}</button>
+        {% endfor %}
+    </div>
+
+    <div>
+        <label>商品款式</label>
+        {% for styleItem in goodsInfo.style %}
+        <button class="btn btn-default">{{styleItem}}</button>
+        {% endfor %}
+    </div>
+
+    <div>
+        <label>商品数量</label>
+        {{goodsInfo.count}}
+    </div>
+
+    <a class="btn btn-success btn-block" href="/goodslist">返回</a>
+
+    
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/st/boot-dist/js/bootstrap.js"></script>
+</body>
+</html>

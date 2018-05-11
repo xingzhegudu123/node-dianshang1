@@ -1,0 +1,22 @@
+{% extends './layout.html' %}
+
+{% block content %}
+<h1>{{sellerInfo.name}}</h1>
+<img src="{{sellerInfo.logo}}"/>
+
+<img  src="{{sellerInfo.banner}}"/>
+
+
+<ul>
+    {% for goods in goodsList %}
+    <li>
+        <a href="/goodsDetail?goodsId={{goods._id.toString()}}">
+        <img src="{{goods.thumbImg[0]}}"/>
+        <h3>{{goods.name}}</h3>
+        <p>¥{{goods.price}}</p>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

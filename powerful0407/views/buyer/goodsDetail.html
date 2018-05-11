@@ -1,0 +1,80 @@
+{% extends './layout.html' %}
+
+
+
+{% block content %}
+
+<div class="doosDetai"> 
+    <!-- 左边大图 -->
+    <div class="power">
+     <p class="guide">您购买的是><a class="shop" href="#"> {{sellerInfo.name}}</a><a href="#"> >的商品</a><a href="#"> </a></p>
+    
+     <div class="bigImage">
+       <img src="{{goodsInfo.thumbImg[0]}}">
+
+     </div>
+
+
+
+
+     <div class="changing"></div>
+    </div>
+
+
+
+
+    <!-- 右边具体 -->
+   <div class="avatar">
+        <h1 class="name">{{goodsInfo.name}}</h1>
+        <p class="dec">{{goodsInfo.description}}</p>
+        <ul class="trader">
+            <li class="take">优惠：<span>满两件打九折</span></li>
+            <li class="price"> <span class="pri"><i>价格：</i>   ¥{{goodsInfo.price}}</span>    <span class="think"><i>评价：233</i>  <i>销量：3737</i></span>        </li>
+           
+        </ul>
+
+    
+        <div class="scale">
+           <p class="cout">分期付:  <span class="co">花瓣|建行信用卡</span></p>
+           <p class="cllect">运费:  <span >包邮</span></p>
+
+           <p class="color"> 颜色:<span class="yan1"></span> <span class="yan2"></span> <span class="yan3"></span> </p>
+           <p class="tape" >尺码:  <span >{{goodsInfo.size[0]}}</span> <span >S</span> <span >M</span>  <span >L</span></p>
+        </div>
+
+        <div class="once">
+             <p class="phone">配送至：<input type="text" placeholder="请输入收获地址"></p>
+             <p class="buycout">我要买：<span> <button>-</button> <input type="text" value="1">  <button>+</button>  </span>            </p>
+             <p class="way">
+                 <a id="buy" href="#">立即购买</a>
+                 <a class="push2"  href="#">加入购物车</a>
+            </p>
+        </div>
+
+   </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+{% block css %}
+<link rel="stylesheet" href="/st/common/css/buydetail.css"/>
+
+{% endblock%}
+
+
+
+
+{% block js %}
+<script src="/st/common/js/goodsDetail.js"></script>
+{% endblock %}

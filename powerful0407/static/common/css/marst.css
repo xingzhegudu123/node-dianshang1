@@ -1,0 +1,23 @@
+/* CSS Document */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,span,nav,section,header,footer { margin:0; padding:0; }
+img, button{ border:none; }
+input{ outline:none; }
+caption, th { font-weight:normal; }
+i,em,caption, th{ font-style: normal;}
+ul li, ol li { list-style:none; } 
+body { color:#333; font:12px/20px "微软雅黑","宋体","Arial Narrow",HELVETICA; }
+
+a{text-decoration:none; color:#333}
+
+/*a:hover{color:#0ec149;}*/
+.noborder{border:0;}
+
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+	font-size: 1px;
+	height: 0;
+	visibility: hidden;
+	overflow: hidden;
+}

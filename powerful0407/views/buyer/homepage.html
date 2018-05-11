@@ -1,0 +1,258 @@
+{% extends './layout.html' %}
+
+{% block  head %}
+<div class="bg">
+ <h1>头部</h1>
+</div>
+{% endblock %}
+  
+
+
+
+
+
+{% block content %}
+<div class="fighting">
+
+<div class="banner">
+    {% include './include_mune.html'%}
+
+    <div id="box">
+    <ul id="list1">
+        <!-- <li><a href="#"><img src="/st/common/img/banner/b1.jpg" /></a></li>
+        <li><a href="#"><img src="/st/common/img/banner/b2.jpg" /></a></li>
+        <li><a href="#"><img src="/st/common/img/banner/b3.jpg" /></a></li>
+        <li><a href="#"><img src="/st/common/img/banner/b4.jpg" /></a></li>
+        <li><a href="#"><img src="/st/common/img/banner/b5.jpg" /></a></li>
+       -->
+
+       <!-- {% for info in userlist %}
+       <li><a href="#"><img src="{{info.img}}" /></a></li>
+       {% endfor %} -->
+
+
+
+        
+    </ul>
+    <ul id="list2">
+      
+        <!-- <li class="active"> 1 </li>
+        <li> 2  </li>
+        <li> 3 </li>
+        <li> 4 </li>
+        <li>  5 </li> -->
+        
+    </ul>
+    
+    
+    <div id="prev"></div>
+    <div id="next"></div>
+</div>
+</div>
+  
+
+
+  <div class="notice">
+      <div class="notice-top">
+         <img src="/st/common/img/smell/hai1_03.jpg">
+
+         
+
+          {% if isLogin %}
+          <p>{{user}}</p>
+          <span><a href="/info">个人中心</a></span>
+          <span><a href="/logout">退出</a></span>
+         
+          {% else %}
+
+           <p>hi~你好</p>
+          <span><a href="/login">登录</a></span>
+          <span><a href="/register">注册</a></span>
+          {% endif %}
+      </div>
+
+      <div class="notice-center">
+        <ul>
+            <li> <a href="#" >   会员俱乐部</a>     </li>
+            <li> <a href="#" >   升级微店主</a>     </li>
+        </ul>
+     </div>
+
+
+
+
+
+      <div class="notice-bottom">
+        <p class="advert">商城公告        <a href="#">更多</a>   </p>
+       
+        <div class="notice-content">
+            <p><a href="#">上合峰会期间快递实名制</a></p>
+            <p><a href="#">上合峰会期间快递实名制</a></p>
+            <p><a href="#">上合峰会期间快递实名制</a></p>
+            <p><a href="#">上合峰会期间快递实名制</a></p>
+        </div>
+
+
+
+        <div class="notice-delive">
+           <ul class="delive-pay"> 
+              <li><span> <i class=" glyphicon glyphicon-jpy" aria-hidden="true"></i></span>
+                 <span>货到付款</span>    </li>
+              <li><span><i class="glyphicon glyphicon-sound-5-1" aria-hidden="true"></i></span> 
+                <span>超时免保</span>    </li>
+
+              <li><span ><i class="glyphicon glyphicon-bed" aria-hidden="true"></i></span> 
+                 <span>送装同步</span>    </li>
+              <li><span><i class="glyphicon glyphicon-phone-alt" aria-hidden="true"></i></span>
+                <span>全国联保</span>    </li>
+           </ul>
+
+
+        </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+    <div class="spring">
+       <a href="#"><img src="/st/common/img/banner/chuntian.png" >   </a>
+
+    </div>
+
+
+    <!-- 新品推荐 -->
+      
+    <div class="news-good" >
+      
+        <div class="layout-grid">
+
+           <h3 class="tit">
+            <i class=" tit-ico"></i>
+            <span class="fast">新品推荐</span>
+            <a href="goodslist" class="more">更多</a>
+        </h3>
+         
+       </div>
+
+
+       <div class="mod-bd">
+           <div class="mod-bd-left">
+                <a href="#"><img src="/st/common/img/banner/qing1.jpg" >   </a>
+           </div>
+
+           <!-- li -->
+           <div class="mod-bd-right">
+              <ul class="speed">
+
+                {%   for goods in  goodsList %}
+                  <li>   
+                    <a class="ic1" href="/goodsDetail?goodsId={{goods._id.toString()}}">
+                            {% if goods.thumbImg.length > 0 %}
+                            <img src="{{goods.thumbImg[0]}}"/>
+                            {% endif %}
+                    </a>
+                    
+                     <span  class="ic2">
+                            <a href="/goodsDetail?goodsId={{goods._id.toString()}}"> {{goods.name}}</a>
+                            <p class="mod-price"> ¥{{goods.price}}</p>
+                      </span>
+                  </li>
+               {% endfor %}
+
+               
+              </ul>
+           </div>
+
+
+
+       </div>
+
+
+
+    </div>
+
+
+
+<!-- 热门店铺 -->
+
+
+    <div class="selleShop">
+   
+        <!-- 头部 -->
+        <div class="layout-grid2">
+          <h3 class="tit2">
+            <i class=" tit-ico2"></i>
+            <span class="fast2">店铺列表</span>
+             <a href="/sellerlist" class="more2">更多</a>
+          </h3>
+        
+        </div>
+
+
+        <!-- 内容 -->
+	
+        <div id="race">
+						
+                <ul >
+                        {%   for seller in  sellerList %}
+                    <li>
+                        <div class="race-bot">
+                        <a href="/sellerDetail?sellerid={{seller._id.toString()}}"><img src="{{seller.logo}}" >   </a>
+                       
+                         <p class="pri">{{seller.name}}</p>
+                         <a  class="dec" href="/sellerDetail?sellerid={{seller._id.toString()}}">{{seller.description}}</a>
+                        </div>
+                    </li>
+                    {% endfor %}
+
+                   
+             </ul>
+            
+              <span id="pvc3"></span>
+              <span id="pvc4"></span>
+            
+            </div>
+        
+        
+        
+        </div>
+         
+</div>
+    
+
+
+    </div>
+
+
+{% endblock %}
+
+
+
+
+
+
+{% block css %}
+<link rel="stylesheet" href="/st/common/css/home.css"/>
+<link rel="stylesheet" href="/st/common/css/lunbo01.css"/>
+{% endblock%}
+
+{% block js %}
+<script src="/st/common/js/lunbo.js"></script>
+<script src="/st/common/js/ban.js"></script>
+
+<script src="/st/common/js/ajax1.js"></script>
+<script src="/st/common/js/move2.js"></script>
+<script src="/st/common/js/towlive.js"></script>
+{% endblock%}

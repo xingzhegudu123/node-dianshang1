@@ -1,0 +1,91 @@
+{% extends './layout.html' %}
+
+{% block css %}
+<style>
+img{
+    width: 50px;
+    height: 50px;
+   
+}
+.table tr{
+   border: 1px solid lightgray
+}
+.table tr td{
+    text-align: center; 
+    /* vertical-align: middle;
+   /* border: 1px solid lightgray; */
+   
+    
+}
+.table  td span{
+    display: inline-block;
+    margin-top: 20px; 
+ 
+   }
+ .table  td a{
+    
+     margin-top: 10px;
+     
+   }
+
+
+.table tr th{
+    text-align: center;height: 30px;line-height: 30px;
+    font-size: 14px;
+}
+
+.btn-success{margin: 15px 10px;}
+
+h1{
+    font-size: 26px;
+}
+
+</style>
+{% endblock %}
+
+{% block content %}
+<p><a class="btn btn-success" href="/goods/add">新增商品</a>
+   
+</p>
+
+
+
+{% if goodsList.length>0 %}
+<table class="table" >
+    <tr>
+        <th>商品名字</th>
+        <th>缩略图</th>
+        <th>尺码</th>
+        <th>价格</th>
+        <th>数量</th>
+        <th>操作</th>
+    </tr>
+    
+    {% for goods in goodsList %}
+    <tr>
+        <td> <span>{{goods.name}}</span>    </td>
+        <td>
+            {% if goods.thumbImg.length > 0 %}
+            <img src="{{goods.thumbImg[0]}}"/>
+            {% endif %}
+        </td>
+        <td> <span>{{goods.size}}</span></td>
+        <td> <span>{{goods.price}}</span></td>
+        <td>  <span>{{goods.count}}</span></td>
+        <td>
+            <a class="btn btn-default" href="/goods/detail?id={{goods._id.toString()}}">详情</a>
+            <a class="btn btn-warning" href="/goods/modify?id={{goods._id.toString()}}">修改</a>
+            <a class="btn btn-danger"  href="/goods/delete?id={{goods._id.toString()}}">删除</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+{% else %}
+
+<p>现在还没有商品数据，请先添加商品</p>
+
+{% endif %}
+
+{% endblock %}

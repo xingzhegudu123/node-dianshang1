@@ -1,0 +1,228 @@
+.doosDetai{
+    height:582px;
+    background: #fff;
+    /* border: 1px solid lightcoral; */
+}
+
+.power, .avatar{
+    float: left;
+}
+
+.power{
+    width:412px;
+    height:100%;
+   
+}
+
+
+.avatar{
+    width:640px;
+    height:100%;
+   
+}
+
+.bigImage img{
+    width:400px ;
+    height:410px;
+  
+}
+
+/* 左边p标签 */
+.power  .guide{
+   height: 40px;
+   line-height: 40px;
+}
+/* a商家名称 */
+.power  .guide .shop{
+      color:#d71249;
+      font-size: 16px;
+      font-weight: bold; 
+}
+.power .changing{
+   width:400px;
+   height:90px;
+   background: khaki
+}
+
+
+
+/* 右边 */
+.avatar .name{
+    margin-top: 46px;
+    font-size: 24px;
+}
+
+.avatar  .dec{
+      height:40px;
+      line-height: 40px;
+      font-size: 12px;
+      color: #666666;
+      padding-left: 10px;
+      border: 1px dashed #f2f2f2;
+      overflow: hidden;
+  }
+
+  /* 价格  优惠 */
+.trader{
+    width:100%;
+    background:#fefafb;
+}
+.trader  .take{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    color:#666666;
+   
+}
+.trader .price{
+    width:100%;
+    height:60px;
+     line-height: 60px; 
+    color:#666666;
+   
+}
+
+
+
+/* 价格 */
+.trader .price .think{
+    float: right;
+}
+.think i:last-child{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.price .pri{
+    font-size: 24px;
+    color:#d71249;
+  
+}
+.price .pri i{
+    font-size: 12px;
+    color:#666666;
+    margin-right: 10px;
+}
+
+
+/* 运费  颜色  尺码  是否分期 */
+.scale{
+  height:150px;
+   
+}
+
+.scale  p{
+    height:35px;
+    line-height: 35px;
+  
+}
+
+/* 分期 */
+.scale .cout{
+  margin-top: 10px;
+}
+.scale .cout .co{
+    margin-left: 20px;
+}
+
+
+/* 运费 */
+.cllect span{
+    margin-left: 20px;
+}
+
+
+/* 颜色 */
+
+.scale .color span{
+     padding: 4px 12px; 
+  
+     margin-left: 20px;
+   
+}
+.color .yan1{
+    background: khaki;
+}
+.color .yan2{
+    background: lightcoral;
+}
+.color .yan3{
+    background: black;
+}
+
+
+/* 尺码 */
+.tape  span{
+    
+    padding: 4px 8px; 
+    border: 1px solid #999999;
+    margin-left: 20px;
+}
+
+
+/* ------立即购买   --------- */
+.once{
+    width: 100%;
+    height:150px;
+    background: #f4f5f7;
+    padding:10px;
+    border: 1px solid  #dddddd;
+}
+.once .phone{
+    height: 40px;
+}
+.phone input{
+    width:260px;
+    height:35px;
+}
+
+/* 数量 */
+
+.buycout{
+    height: 40px;
+    padding-top: 5px;
+   
+}
+.buycout span{
+    border: 1px solid #999999; 
+   display: inline-block
+}
+.buycout button{
+      padding: 2px 10px;
+}
+.buycout input{
+    width:30px;
+    border: 0;
+    text-align: center;
+  
+   
+    
+}
+
+/* 两按钮 */
+.way{
+     height: 60px; 
+     line-height: 60px;
+    padding: 0 50px;
+   
+}
+.way #buy{
+      padding: 10px 25px;
+       background: #d71249;
+       color: #fff;
+     
+       border-radius: 2px;
+       font-weight: bold;
+    
+
+}
+
+.way .push2{
+    padding: 10px 20px;
+     background: #0f4bad;
+     color: #fff;
+     margin-left: 5px;
+     border-radius: 2px;
+     font-weight: bold;
+  
+
+}

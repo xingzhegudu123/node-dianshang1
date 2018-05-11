@@ -1,0 +1,103 @@
+{% extends './layout.html' %}
+
+
+
+{% block  head %}
+<div class="bg">
+ <h1>头部</h1>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+{% block content %}
+
+
+<div class="good-list">
+ <p class="rais"> 
+     <a class="btn btn-success" href="/goodslist?page=1&count=8&sort=1">升序</a>
+    <a class="btn btn-success" href="/goodslist?page=1&count=8&sort=-1">降序</a>
+</p>
+
+<div class="hoist">
+  
+        <ul class="over">
+                {% for goods in goodsList %}
+                <li>   
+                  <a class="ic1" href="/goodsDetail?goodsId={{goods._id.toString()}}">
+                    <img src="{{goods.thumbImg[0]}}" >   </a>
+                   <span  class="ic2">
+                          <a href="/goodsDetail?goodsId={{goods._id.toString()}}"> {{goods.name}}</a>
+                          <p class="mod-price">¥{{goods.price}}</p>
+                    </span>
+                </li>
+                {% endfor %}
+
+      
+   </ul>
+
+
+
+ <!--  分页  -->
+ <nav aria-label="Page navigation" class="paging">
+        <ul class="pagination">
+      
+          {% if page-1>0 %}
+          <li>
+            <a href="/goodslist?page={{page-1}}&count={{count}}&sort={{sort}}" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          {% endif %}
+      
+
+          {% for pageItem in pageArr %}
+          <li class="{%if page==pageItem%}active{%endif%}"><a href="/goodslist?page={{pageItem}}&count={{count}}&sort={{sort}}">{{pageItem}}</a></li>
+          {% endfor %}
+      
+          {% if page<pageArr.length %}
+       
+    
+          <li>
+            <a href="/goodslist?page={{page+1}}&count={{count}}&sort={{sort}}" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </nav>
+
+
+
+</div>
+
+
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% block css %}
+<link rel="stylesheet" href="/st/common/css/goodlist.css"/>
+{% endblock%}
+
+{% block js %}
+
+{% endblock%}

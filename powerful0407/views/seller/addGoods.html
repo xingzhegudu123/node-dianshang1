@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/st/boot-dist/css/bootstrap.css"/>
+    <title>商城</title>
+</head>
+<body>
+    <div class="container">
+    <h1>新增商品</h1>
+    <div class="form-group">
+        <label>商品名字</label>
+        <input name="name" class="form-control" type="text" placeholder="商品名字"/>
+    </div>
+    <div class="form-group">
+        <label>商品描述</label>
+        <textarea name="des" class="form-control" placeholder="商品描述"></textarea>
+    </div>
+    <form id="detail" class="form-group">
+        <label>商品详情图</label>
+        <input name="image" class="form-control" type="file" multiple/>
+        <div class="detail-info"></div>
+    </form>
+    <form id="thumb" class="form-group">
+        <label>商品缩略图</label>
+        <input name="image" class="form-control" type="file" multiple/>
+        <div class="thumb-info"></div>
+    </form>
+
+    <div class="form-inline">
+        <div class="form-group">
+            <label>商品尺码</label>
+            <input class="form-control" name="size" type="text" placeholder="尺码"/>
+            <button class="btn btn-success" id="add-size">添加</button>
+            <div class="size-info"></div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>价格</label>
+        <input name="price" class="form-control" type="number" placeholder="商品价格"/>
+    </div>
+
+    <button id="add" class="btn btn-success btn-block">新增</button>
+    <a class="btn btn-danger btn-block" href="/goodslist">取消</a>
+
+</div>
+    
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/st/boot-dist/js/bootstrap.js"></script>
+    <script src="/st/seller/js/addGoods.js"></script>
+</body>
+</html>

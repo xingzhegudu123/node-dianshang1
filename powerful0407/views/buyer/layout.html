@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/st/boot-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/st/common/css/marst.css"/>
+    <link rel="stylesheet" href="/st/common/css/font1/iconfont.css"/>
+    <title>Document</title>
+    {% block css %}
+    {% endblock %}
+      <style>
+         body{
+             background: #f2f2f2
+         }
+       .bg{
+           background: #fff
+       }
+        
+         .nav-home{
+           
+             text-align: center;
+              height:46px;
+            
+              background: #d8e2ea
+           
+         }
+        .nav{
+             /* display:inline-block; */
+             /* height:46px; */
+            
+        }
+        .main{
+            width:1192px;
+            margin: 0 auto;
+            /* background: hotpink */
+        }
+
+        .nav li{
+             padding: 3px 13px; 
+          
+        }
+      /* 全部分类 */
+        .nav .erli{
+            /* padding-right:50px;  */
+            position: relative;
+             width:200px;
+             height: 46px;
+             margin-right: 26px;
+           background: #6ae2ae;
+          
+        }
+        /* .nav .erli a{
+            color:#fff;
+        } */
+      
+      </style>
+
+
+
+
+</head>
+<body>
+        {% block  head %}
+        {% endblock %}
+
+
+
+       <div class="nav-home">
+
+       <div class="main">
+
+        <ul class="nav nav-pills ">
+
+                <li role="presentation" class="erli"><a   href="#">商品分类</a>
+                
+                  
+                
+       
+                </li>
+                <li role="presentation" class={{homeActive}}><a href="/">首页</a></li>
+                <li role="presentation" class={{sphereAitive}}><a href="/sphere">我的积分</a></li>
+                <li role="presentation" class={{sellerActive}}><a href="/sellerlist">店铺列表</a></li>
+                <li role="presentation" class={{goodsActive}}><a href="/goodslist">商品列表</a></li>
+
+
+                <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                         会员 <span class="caret"></span>
+                        </a>
+                     
+                        {% if isLogin %}
+                        <ul class="dropdown-menu">
+                            <li><a href="#">{{user}}</a></li>
+                            <li><a href="/myorder">我的订单</a></li>
+                            <li><a href="/logout">退出</a></li>
+                       </ul>
+
+                        {% else %}
+                        <ul class="dropdown-menu">
+                                <li><a href="/register">注册</a></li>
+                                <li><a href="login">登录</a></li>
+                                <li><a href="#">取消</a></li>
+                        </ul>
+                        {% endif %}        
+
+                      </li>
+ 
+            <li role="presentation"><a href="#">线下体验店</a></li>
+            <li role="presentation"><a href="#">成套设计</a></li>
+
+        </ul>
+       
+    </div>
+
+       </div>
+
+
+  <!-- 轮播图 -->
+
+
+
+
+
+
+
+
+
+    <div class="main  content">
+
+        {% block content %}
+        {% endblock %}
+
+    </div>
+       
+      <div class="foot">
+          <!-- <img src="/st/common/img/banner/foot.png"> -->
+      </div>
+
+
+
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="/st/boot-dist/js/bootstrap.js"></script>
+{% block js %}
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,498 @@
+
+
+/* 头部 */
+/* .bg{
+    background: #fff
+} */
+
+
+/* ----- */
+
+.fighting{
+    width:1192px;
+  
+    height: 430px;
+   
+}
+
+/* 轮播图 */
+.banner{ 
+    float: left;
+      width:948px; 
+      height:430px; 
+       position:relative;   
+       
+     
+  }
+
+
+.notice{
+    float: right;
+    width:244px;
+    height: 100%;
+    background: #fff;
+    
+}
+
+
+
+/* 二级菜单 */
+
+.mune-dan{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 2;
+    width:650px;
+    height:430px;
+ 
+    
+}
+.mune-left{
+  
+    float: left;
+    width:200px;
+    height:430px;
+    background: #dee1e0;  
+    opacity: 0.65;  
+     /* filter:alpha(opacity==50);  */
+
+}
+
+.mune-right{
+    float: left;
+    width:450px;
+    height:430px;
+  
+   
+
+
+}
+
+
+
+/* 左边列表部分 */
+.mune-left ul{margin-top: 30px}
+.mune-left ul li {text-align: center; line-height: 40px;    margin-top: 10px; color:#333333;  }
+.mune-left ul li  a{ font-size:14px ; color:#333333;    }
+.mune-left ul li  a:hover{color:#94193f}
+
+.mune-left ul li  a i {font-size: 26px; padding:0 5px;   vertical-align: middle;}
+
+
+
+/* 右边隐藏部分 */
+.mune-right p{margin-top: 10px;  margin-left: 10px; line-height:30px; text-align: center;}
+.mune-right p a {padding:5px 10px; background:#0086B3; margin-right: 5px; }
+
+
+/* ul大盒子 很多li叠在一起 */
+.mune-right #me-list{position: relative;  width:385px; height: 100%;}
+
+
+.mune-right  #me-list li{width:450px; height: 100%; background: #a5b0b2;   position:absolute; left:0 ; top:0;  display: none }
+
+.mune-right  #me-list li a:hover{background: #94193f;} 
+
+
+/* 注册--登录 个人中心 */
+
+.notice-top{
+    width:100%;
+    height:145px;
+    padding:15px 0 10px 0;
+    
+    text-align: center;
+
+}
+
+
+.notice-center{
+    width:100%;
+    height:58px;
+    border-bottom:  1px solid #eeeeee;
+   
+}
+
+.notice-bottom{
+    width: 100%;
+    height:225px;
+   
+}
+
+
+/* ----右边具体内容----- */
+
+
+/* 注册登录 */
+.notice-top p{
+    line-height: 32px;
+}
+.notice-top span a{
+    padding:2px 8px;
+    background: #2979ff;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+.notice-center ul{
+    height: 100%;
+    width:100%;
+    
+    
+}
+.notice-center ul li{
+    float: left;
+    padding: 6px 0 0 6px;
+    text-align: center;
+    width:49%;
+    height: 100%; 
+    border-top: 1px solid #eeeeee
+}
+.notice-center ul li:last-child{
+    border-left: 1px solid #eeeeee
+}
+
+
+
+/* 公告 p */
+.notice-bottom .advert{
+    
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    margin-left: 10px;
+   border-bottom:1px solid #eeeeee; 
+}
+/* 中间新闻 */
+.notice-content{
+    padding: 5px 0 5px 0;
+}
+.notice-content p{
+    line-height: 25px;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+/* 底下货到付款栏 */
+.delive-pay{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-top:1px solid #eeeeee;
+  
+}
+.delive-pay li{
+    width:50%;
+    height:42px;
+    line-height: 42px;
+    text-align: center;
+    border-bottom:1px solid #eeeeee; 
+}
+
+.delive-pay li span i{
+    color: #2979ff;
+    margin-right: 5px;
+    font-size: 14px
+}
+
+
+
+/* banner大图 */
+.spring{
+    padding:10px 0;
+}
+
+
+
+/* ---------------新品推荐 --------------- */
+.news-good{
+    background: #fff;
+    min-height:480px;
+  
+   
+}
+
+
+
+/* ------------头部------------------- */
+.layout-grid  {
+   height:60px;
+   background-color: #2979ff;
+   border-radius: 8px;
+}
+
+.layout-grid .tit {
+    
+    height:60px;
+    line-height: 60px;
+  
+    font-size: 18px;
+   
+   
+
+}
+
+/* 精灵小图标 */
+.layout-grid .tit .tit-ico{
+    display: inline-block;
+    
+     margin-left:  15px; 
+     background: url(/st/common/img/banner/jin1.png)no-repeat -37px -230px;
+    width:32px;
+    height:32px;
+    vertical-align: middle;
+   
+   
+
+}
+/* 新品推荐 */
+
+
+.layout-grid .tit  .fast{
+     margin-left: 5px;
+     color: #fff;
+}
+
+/* 更多 */
+.layout-grid .tit .more{
+    color: #fff;
+     float: right;
+     margin-right: 15px;
+}
+
+
+/* ------------    内容  -------------- */
+.mod-bd{
+    padding: 10px;
+   
+}
+
+
+/* --------左边-------- */
+.mod-bd-left , .mod-bd-right{
+  float: left;
+}
+.mod-bd-left{
+    width:240px;
+  
+  
+}
+
+
+/* --------右边-------- */
+.mod-bd-right{
+   margin-left: 10px;
+    width:920px;
+ 
+    height: 400px
+}
+
+.mod-bd-left img{
+    width: 100%;
+    height: 400px
+}
+
+/* 右边大ul弹性盒 */
+.mod-bd-right .speed{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+.mod-bd-right .speed li{
+    width:33%;
+    height: 198px;
+ 
+    border-bottom: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea
+}
+.speed li:nth-child(3),.speed li:nth-child(6){
+    border-right: 0;
+}
+.speed li:nth-child(4), .speed li:nth-child(5), .speed li:nth-child(6){
+    border-bottom: 0;
+}
+
+
+/* ----------  具体li样式        ----------- */
+
+ .mod-bd-right  li  .ic1, .mod-bd-right  li  .ic2{
+    float: left;
+   
+}
+/* 左边图片 */
+.mod-bd-right  li  .ic1 {
+    margin: 20px 20px 0 20px;
+}
+.mod-bd-right  li  .ic1 img{
+    width: 135px;
+    height:135px;
+}
+
+/*右边 a名称和p价格 */
+.mod-bd-right  li  .ic2 {
+ 
+    margin-top: 20px;
+   
+  
+}
+/* 名称 */
+.mod-bd-right  li  .ic2 a{
+    display: block;
+    width:120px;
+    height:36px;
+    margin-top: 42px;
+   margin-bottom: 25px;
+}
+/* 价格 */
+.mod-price {
+    font-size: 14px;
+    color: #ff4949;
+}
+
+
+/* ----------------------热门店铺   ----------------- */
+.selleShop{
+    height: 445px;
+    margin-top: 25px;
+  
+}
+
+
+.layout-grid2  {
+    height:60px;
+    background-color: #2979ff;
+    border-radius: 8px;
+ }
+ 
+ .layout-grid2 .tit2 {
+    /* background: url(/st/common/img/banner/jin1.png)no-repeat 20px -250px; */
+     height:60px;
+     line-height: 60px;
+   
+     font-size: 18px;
+    
+    
+ 
+ }
+ 
+ /* 精灵小图标 */
+ .layout-grid2 .tit2 .tit-ico2{
+     display: inline-block;
+     
+      margin-left:  15px; 
+      background: url(/st/common/img/banner/jin1.png)no-repeat -1px -260px;
+     width:32px;
+     height:52px;
+     /* border: 1px solid #ff4949; */
+     vertical-align: middle;
+    
+    
+ 
+ }
+
+ 
+ .layout-grid2 .tit2  .fast2{
+      margin-left: 5px;
+      color: #fff;
+ }
+ 
+ /* 更多 */
+ .layout-grid2 .tit2 .more2{
+     color: #fff;
+      float: right;
+      margin-right: 15px;
+ }
+
+
+
+ /* 店铺下 */
+
+
+ /* 播放视扣 */
+ #race{
+     width:100%;
+    height:386px;
+    position: relative;
+   
+    overflow: hidden;
+}
+
+
+
+#race ul{
+   
+     margin-top: 10px;
+     position: absolute;  
+     left: 0;top:0; 
+ }
+
+
+ #race ul li{width:302px; height:375px; float: left;    }
+ #race li img{width:292px;   height:248px;}
+
+
+ /* 上一页 */
+ #race #pvc3{
+     display: block;
+     width:24px;
+     height:56px;
+     /* border: 1px solid lawngreen; */
+     position: absolute;
+     top:130px;
+     left:0;
+    
+      background: url(/st/common/img/banner/jin1.png)no-repeat -40px -302px;
+ }
+ /* 下一页 */
+ #race #pvc4{
+     position: absolute;
+     display: block;
+     width:24px;
+     height:56px;
+  
+    top:130px;
+    right:0;
+    background: url(/st/common/img/banner/jin1.png)no-repeat -65px -300px;
+}
+
+/* li大盒子 */
+
+.race-bot{
+    width:292px;
+    height:100%;
+    background: #fff;
+}
+
+/* 图片下面p */
+#race .pri{
+    /* width:100%; */
+    margin-left: 10px;
+    height: 43px;
+    line-height: 43px;
+    
+}
+#race .pri span{
+    color:#ff4949;
+    float: right;
+    margin-right: 15px;
+}
+/* a描述 */
+#race li .dec{
+      display: block;
+      height: 40px;
+      padding:0 15px 0 10px;
+      color:#999999;
+}

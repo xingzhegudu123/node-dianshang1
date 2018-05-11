@@ -1,0 +1,64 @@
+
+.seller-list{
+    width:100%;
+   
+    min-height:800px;
+    
+}
+
+
+.wind {
+   margin-top: 20px;
+
+  
+}
+/* li 下a大盒子 */
+.wind  ul li  .ic1{
+    float: left;
+    width:280px;
+    height: 200px;
+  
+    background: #fff;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.wind li  .ic1 img, .wind  li  .ic2{
+    float: left;
+   
+}
+/* 左边图片 */
+.wind  li  .ic1  img{
+    margin: 20px 20px 0 10px;
+
+}
+.wind  li  .ic1 img{
+    width: 135px;
+    height:135px;
+}
+
+/*右边 span盒子 */
+.wind  li  .ic2 {
+ 
+    margin-top: 20px;
+   
+  
+}
+/* p名称 */
+.wind  li  .ic2 .mic{
+  
+    height:26px;
+    font-size: 16px;
+    margin-top: 15px;
+   margin-bottom: 15px;
+}
+/* p描述 */
+ .wind  .mod-price {
+   
+    width:100px;
+     
+    font-size: 12px;
+    color: #a7a1a1
+    
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/st/boot-dist/css/bootstrap.css"/>
+    <title>商城</title>
+</head>
+<body>
+    <div class="container">
+    <h1>注册</h1>
+        
+    <div class="form-group">
+        <label>用户名：</label>
+        <input name="name" class="form-control" type="text" placeholder="用户名"/>
+    </div>
+    <div class="form-group">
+        <label>密码：</label>
+        <input name="psd" class="form-control" type="password" placeholder="密码"/>
+    </div>
+    <div class="form-group">
+        <label>确认密码：</label>
+        <input name="repsd" class="form-control" type="password" placeholder="确认密码"/>
+    </div>
+    <div class="form-group">
+        <label>店铺描述：</label>
+        <textarea id="description" class="form-control"></textarea>
+    </div>
+
+    <form id="logoform" enctype="multipart/form-data">
+    <div class="form-group">
+        <label>请选择logo图标上传：请上传200*200大小的png图片</label>
+        <input id="logo" name="image" type="file"/>
+        <img width="200" height="200" src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1516696107&di=86c7b32e5d4bbd17e1355f5bface86c1&src=http://imgsrc.baidu.com/imgad/pic/item/b21c8701a18b87d6963ac7360c0828381f30fd9b.jpg"/>
+    </div>
+    </form>
+
+    <form id="bannerform" enctype="multipart/form-data">
+    <div class="form-group">
+        <label>请选择店铺banner上传：</label>
+        <input id="banner" name="image" type="file"/>
+        <img width="800" height="100" src="http://placehold.it/800x100"/>
+    </div>
+    </form>
+
+    <button id="confirm" class="btn btn-block btn-success">注册</button>
+    <button class="btn btn-block btn-danger">取消</button>
+
+    <a href="/seller/login">已有账号，直接登录</a>
+</div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/st/boot-dist/js/bootstrap.js"></script>
+    <script src="/st/seller/js/register.js"></script>
+</body>
+</html>

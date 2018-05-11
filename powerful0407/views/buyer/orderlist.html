@@ -1,0 +1,24 @@
+{% extends './layout.html' %}
+
+
+{% block content %}
+<div>
+    订单
+    <table class="table">
+        <tr>
+            <th>商品名称</th>
+            <th>数量</th>
+            <th>总价</th>
+            <th>卖家</th>
+        </tr>
+        {% for order in orderList %}
+        <tr>
+            <th>{{order.goods.name}}</th>
+            <th>{{order.count}}</th>
+            <th>{{order.goods.price*order.count}}</th>
+            <th>{{order.seller.name}}</th>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

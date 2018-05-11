@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/st/boot-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/st/common/css/marst.css"/>
+    <title>商城</title>
+    {% block css %}
+    {% endblock %}
+    <style>
+         body{
+             /* background: #f2f2f2 */
+         }
+         .head{
+            height:44px;
+            
+            background: #d8e2ea
+           
+         }
+         .nav{
+            background: #d8e2ea
+         }
+         .nav li a{
+             padding:10px 25px;
+             font-size: 16px;
+         }
+     .main{
+            width:1080px;
+            margin: 0 auto;
+            /* background: hotpink */
+        }
+    </style>
+
+
+
+</head>
+<body>
+       <div class="head">
+            <div class="main">
+        <ul class="nav nav-tabs">
+        
+            <li role="presentation" class="{{indexActive}}"><a href="/">商家首页</a></li>
+            <li role="presentation" class="{{goodsActive}}">
+                <a href="/goodslist">商品管理</a>
+            </li>
+            
+            <li role="presentation"  class="{{orderActive}}"  >
+                <a href="/orderlist">订单列表</a>
+            </li>
+            <li role="presentation">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        {{sellername}} <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/sellerinfo">商家中心</a></li>
+                    <li><a href="/logout">退出</a></li>
+                </ul>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+
+ 
+        <div class="main content">
+        {% block content %}
+        {% endblock %}
+     </div>
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/st/boot-dist/js/bootstrap.js"></script>
+    {% block js %}
+    {% endblock %}
+</body>
+</html>

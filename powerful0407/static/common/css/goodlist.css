@@ -1,0 +1,78 @@
+
+.good-list{
+    width:100%;
+    border: 1px solid khaki;
+    height:500px;
+}
+
+.rais{
+    height:60px;
+    line-height: 60px;
+}
+.rais a:first-child{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+
+/* ul */
+.hoist .over{
+    width:100%;
+    height:440px;
+  
+}
+
+
+.hoist .over li{
+    float: left;
+    width:280px;
+    height: 200px;
+  
+    background: #fff;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+
+ .over li  .ic1, .over  li  .ic2{
+    float: left;
+   
+}
+/* 左边图片 */
+.over  li  .ic1 {
+    margin: 20px 20px 0 10px;
+
+}
+.over li  .ic1 img{
+    width: 135px;
+    height:135px;
+}
+
+/*右边 span盒子 */
+.over  li  .ic2 {
+   
+    margin-top: 20px;
+   
+  
+}
+/* a名称 */
+.over   li  .ic2 a{
+    display: block;
+    width:100px;
+    height:36px;
+    margin-top: 42px;
+   margin-bottom: 40px;
+}
+/* p价格 */
+.over   .mod-price {
+    font-size: 14px;
+    color: #ff4949;
+}
+
+
+/* 下面分页器 */
+.paging{
+
+  text-align: center
+}
+

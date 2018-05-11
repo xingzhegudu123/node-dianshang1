@@ -1,0 +1,69 @@
+{% extends './layout.html' %}
+
+
+
+{% block  head %}
+<div class="bg">
+ <h1>头部</h1>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+{% block content %}
+
+
+<div class="seller-list">
+
+
+<div class="wind">
+  
+        <ul class="social">
+            {% for  seller in sellerList %}
+                <li>   
+                    
+                  <a class="ic1" href="/sellerDetail?sellerid={{seller._id.toString()}}">
+                    <img src="{{seller.logo}}" >  
+                   <span  class="ic2">
+                          <p class="mic"> {{seller.name}}</p>
+                          <p class="mod-price">{{seller.description}}</p>
+                    </span>
+                 </a>
+
+                </li>
+                {% endfor %}
+       
+   </ul>
+
+</div>
+
+
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% block css %}
+<link rel="stylesheet" href="/st/common/css/seller.css"/>
+{% endblock%}
+
+{% block js %}
+
+{% endblock%}

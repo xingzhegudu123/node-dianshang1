@@ -1,0 +1,12 @@
+{% extends './layout.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>个人中心</h1>
+
+    <p>商家名称：{{sellerInfo.name}}</p>
+    <p>商家logo：<img src="{{sellerInfo.logo}}"/></p>
+    <p>商家banner：<img src="{{sellerInfo.banner}}"/></p>
+
+<div>
+{% endblock %}

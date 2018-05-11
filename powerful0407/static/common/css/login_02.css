@@ -1,0 +1,49 @@
+.main{width:1100px; margin: 0 auto;  }
+.top{height:80px; padding-top: 20px;  }
+
+.top .m1{float: left;  }
+.top .m2{float: right; margin-top: 20px; }
+
+.really{height:600px;  background:url(../img/love/long.png); opacity: 0.85;       }
+/*--左--*/
+.debut{margin-top: 100px; float: left;}
+/*--右--*/
+.climbing{width:390px; height:490px;    float: left; margin-top: 80px; margin-left: 60px; padding:0 10px 10px 20px;   background:#F0FFF0;}
+.climbing p{line-height: 40px;}
+.climbing p .ga1{font-size: 22px; font-weight: bold; margin-right: 20px; color:#94193f}
+
+.climbing p .ga2{margin-left: 42px;}
+.climbing p #helm{color:#94193f;}
+
+
+
+/*---标题栏   ----*/
+#culti{margin-top: 10px;  width: 100%;  height:40px;}
+
+
+/*----大盒子 --*/
+#chasm{width:328px; height:318px; }
+ /*-----------ul-----------*/
+#chasm #gulf{width:328px; height:318px;  position: relative; }
+#gulf li{position: absolute; left: 0; top:0;  width:100%; height:100%;            }
+
+#gulf li:nth-child(1){background: bisque;}
+
+#gulf li:nth-child(2){ text-align: center;}
+/*-- ---- 普通登录  ---------*/
+.street02  #dhd{width:328px;}
+.street02  #dhd tr{height:60px; }
+.street02  #dhd tr td{  height:50px;  text-align: center;   /*    border: 1px solid #0086B3;*/}
+
+.street02  #dhd .fers1 input{width:300px; height:30px;}
+
+.street02  #dhd .fers2 input{width:100px; height: 30px;}
+#dhd .fers2{padding: 0 12px;}
+#dhd .fers2 input{ float: left; margin-top: 10px;}
+
+
+#dhd .fers3 span{float: left; margin-left: 20px;}
+#dhd .fers3 a{float: right; margin-right: 20px; color:#B51748;}
+
+#dhd .fers4 a{padding: 12px 120px; background:#A52A2A;  color:white    }
+
