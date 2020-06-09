@@ -4,6 +4,7 @@
 - 用户注册时的手机号，随机验证码，密码强度等信息的正则匹配校验。
 - mongodb数据库的增删改查操作: 增: new 数据表对象(属性).save()  删：deleteOne-deleteMany-remove  改：update  查：findOne-find-findById
 - 订单列表使用mongodb数据库populate关联买家商家操作。
+- 利用cookies挂载response判断是否登录查询买家信息。
 
 ## 如何运行
 - 1  启动数据库
