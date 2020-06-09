@@ -15,8 +15,6 @@
 node server.js  或  node  sellerServer.js
 ### 运行效果
 ![image](https://github.com/xingzhegudu123/vue-cli3-Ts/blob/feature-dev-1.0/public/imgReadme/accunt.png)
-![image](https://github.com/xingzhegudu123/vue-cli3-Ts/blob/feature-dev-1.0/public/imgReadme/table.png)
-![image](https://github.com/xingzhegudu123/vue-cli3-Ts/blob/feature-dev-1.0/public/imgReadme/vue3+ts.png)
 
 ```
 
